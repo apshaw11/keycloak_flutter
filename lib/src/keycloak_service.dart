@@ -79,7 +79,7 @@ class KeycloakService {
   }
 
   get clientID {
-    return _keycloak.clientID;
+    return _keycloak.clientId;
   }
 
   get authServer {
