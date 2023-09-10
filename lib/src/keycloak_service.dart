@@ -82,8 +82,8 @@ class KeycloakService {
     return _keycloak.clientId;
   }
 
-  get authServer {
-    return _keycloak.authServerUrl;
+  get tokenEndpoint {
+    return "${_keycloak.authServerUrl}realms/${_keycloak.realm}/protocol/openid-connect/token";
   }
 
   Future<String> getToken([bool forceLogin = false]) async {
