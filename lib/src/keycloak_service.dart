@@ -83,11 +83,7 @@ class KeycloakService {
   }
 
   get authServer {
-    return _keycloak.authServer;
-  }
-
-  get scope {
-    return _keycloak.scope;
+    return _keycloak.authServerUrl;
   }
 
   Future<String> getToken([bool forceLogin = false]) async {
