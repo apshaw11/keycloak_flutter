@@ -75,19 +75,19 @@ class KeycloakService {
   }
 
   get refreshToken {
-    return _keycloak.refreshToken
+    return _keycloak.refreshToken;
   }
 
   get clientID {
-    return _keycloak.clientID
+    return _keycloak.clientID;
   }
 
   get authServer {
-    return _keycloak.authServer
+    return _keycloak.authServer;
   }
 
   get scope {
-    return _keycloak.scope
+    return _keycloak.scope;
   }
 
   Future<String> getToken([bool forceLogin = false]) async {
